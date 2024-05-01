@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="/index.css">
+    <title>Tools</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+        :root {
+            --primary-color: #111317;
+            --primary-color-light: #1f2125;
+            --primary-color-extra-light: #35373b;
+            --secondary-color: #AFDDE5;
+            --secondary-color-dark: #0FA4AF;
+            --text-light: #d1d5db;
+            --white: #ffffff;
+            --max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: math;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+        header {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--secondary-color);
+            top: 0;
+            left: 0;
+        }
+
+        .header-button {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .header-button a {
+            text-decoration: none;
+        }
+
+        #LOGIN {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            border-color: white;
+            transition: 0.1s ease-in;
+            height: 3rem;
+            width: 8rem;
+        }
+
+        #LOGIN:hover {
+            background-color: white;
+            border-color: var(--secondary-color-dark);
+            transform: translateY(2px);
+        }
+
+        #SIGNUP {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            transition: 0.1s ease-in;
+            border-color: var(--secondary-color-dark);
+            height: 3rem;
+            width: 8rem;
+        }
+
+        #SIGNUP:hover {
+            background-color: var(--secondary-color);
+            border-color: white;
+            transform: translateY(2px);
+        }
+
+        header img {
+            position: relative;
+            right: 2rem;
+            height: 100px;
+            width: 145px;
+        }
+
+        .navbar {
+            position: relative;
+            right: -4rem;
+        }
+
+        .navbar a {
+            font-size: 1.15rem;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 2.5rem;
+            transition: .3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            padding-left: 2px;
+            color: var(--primary-color-light);
+        }
+
+
+        .section-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10rem;
+            margin-top: 10rem;
+        }
+
+        .grid-column-p {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding-top: 5rem;
+            height: 20rem;
+            border: 1px solid var(--secondary-color-dark);
+            border-top-width: 0px;
+            border-left-width: 3px;
+            border-right-width: 0px;
+            border-bottom-width: 3px;
+        }
+
+        .grid-column-p h3 {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .grid-column-p-1 h3 {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .grid-column-p-1 {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            padding-top: 5rem;
+            height: 20rem;
+            border: 1px solid var(--secondary-color-dark);
+            border-top-width: 0px;
+            border-left-width: 0px;
+            border-right-width: 3px;
+            border-bottom-width: 3px;
+        }
+
+        .relative {
+            display: flex;
+        }
+
+        .info-image {
+            box-shadow: 0.5rem 12px 60px rgba(0, 0, 0, 0.2);
+            transition: .5s ease-in-out;
+        }
+
+        #info-image {
+            box-shadow: 6px 0.5rem 60px rgba(0, 0, 0, 0.2);
+            transition: .5s ease-in-out;
+        }
+
+        .info-image:hover {
+            transform: translateX(20px);
+        }
+
+        #info-image:hover {
+            transform: translateX(20px);
+        }
+
+        .blog_para h3 {
+            font-size: x-large;
+            margin-bottom: 3rem;
+        }
+
+        .btn-1 {
+            position: relative;
+            padding-top: 5rem;
+            right: 28rem;
+        }
+
+        .btn-1 {
+            display: flex;
+            padding-top: 5rem;
+            gap: 10px;
+        }
+
+        .btn-1 a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3rem;
+            width: 7rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .btn-1 #start {
+            background-color: var(--secondary-color);
+            transition: 0.1s ease-in;
+            border-color: var(--secondary-color-dark);
+            right: 5rem;
+            position: relative;
+        }
+
+        .btn-1 #start:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color-dark);
+            transform: translateY(2px);
+        }
+
+        .button {
+            display: flex;
+            padding-top: 5rem;
+            padding-left: 1rem;
+            gap: 10px;
+        }
+
+        button a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 3rem;
+            width: 7rem;
+            text-decoration: none;
+            color: black;
+        }
+
+        .button #start {
+            background-color: var(--secondary-color);
+            transition: 0.1s ease-in;
+            border-color: var(--secondary-color-dark);
+        }
+
+        .button #start:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color-dark);
+            transform: translateY(2px);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <img class="logo" src="/img/logo.png" alt="">
+            <nav class="navbar">
+                <a href="/Resume/main.html">Tool</a>
+                <a href="/pricing page/pricing.html">Pricing</a>
+                <a href="/Accordation page/FAQs.html">FAQs</a>
+            </nav>
+            <div class="header-button">
+                <button id="LOGIN"><a href="/signup or login/login.html">Log in</a></button>
+                <button id="SIGNUP"><a href="/signup or login/signup.html">Sign Up</a></button>
+            </div>
+        </header>
+        <div class="container">
+
+            <!-- Info -->
+            <section class="grid-row ">
+                <div class="section-container">
+                    <div class="grid-column-p ">
+                        <h3>Basic Resume</h3>
+                        <p style="padding-left:1rem ;">Modern Resume give you a free, modern, professtional resume.</p>
+                        <div class="button btn">
+                            <button id="start"><a href="/3/index.html">Start Now</a></button>
+                        </div>
+                    </div>
+                    <div class="grid-column ">
+                        <div class="relative">
+                            <a href="/3/index.html"><img class="info-image " src="/img/Templates-img/resume-3.jpg"
+                                    alt="Teepe" width="500px"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Cabin -->
+                <div class="section-container">
+                    <div class="grid-column">
+                        <div class="relative">
+                            <a href="/1/index.html"><img class="info-image" id="info-image"
+                                    src="/img/Templates-img/resume-1.jpeg" alt="Cabin" width="500px"></a>
+                        </div>
+                    </div>
+                    <div class="grid-column-p-1 ">
+                        <h3>Standard Resume</h3>
+                        <p style="padding-left:1rem ;">Standard Resume gives you a free, modern, professional resume.
+                        </p>
+                    </div>
+                    <div class="btn-1">
+                        <button id="start"><a href="/1/index.html">Start Now</a></button>
+                    </div>
+                </div>
+
+
+                <!-- Teepees -->
+                <div class="section-container">
+                    <div class="grid-column-p ">
+                        <h3>Modern Resume</h3>
+                        <p style="padding-left:1rem ;">Modern Resume give you a free, modern, professtional resume.</p>
+                        <div class="button btn">
+                            <button id="start"><a href="/1/index.html">Start Now</a></button>
+                        </div>
+                    </div>
+                    <div class="grid-column ">
+                        <div class="relative">
+                            <a href="/2/index.html"><img class="info-image " src="/img/Templates-img/resume-2.jpeg"
+                                    alt="Teepee" width="500px"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <ul>
+
+                    <img src="/img/logo.png" alt="logo" style="height: 100px;
+                        width: 150px;">
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Resources</h6>
+                    <li>
+                        <a href="/Resume/main.html">Resume</a>
+                    </li>
+                    <li><a href="/Resume/main.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Product</h6>
+                    <li>
+                        <a href="/pricing page/pricing.html">Price</a>
+                    </li>
+                    <li> <a href="/Reviews/reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Support</h6>
+                    <li><a href="/contactpage/contactus.html">Contact Us</a></li>
+                    <li>
+                        <a href="/privacy/privacy.html">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last_para">
+            <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

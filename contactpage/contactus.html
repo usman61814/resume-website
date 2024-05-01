@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/index.css">
+    <title>Contact now</title>
+    <style>
+        :root {
+            --primary-color: #111317;
+            --primary-color-light: #1f2125;
+            --primary-color-extra-light: #35373b;
+            --secondary-color: #AFDDE5;
+            --secondary-color-dark: #0FA4AF;
+            --text-light: #d1d5db;
+            --white: #ffffff;
+            --max-width: 1200px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgba(120, 57, 175, 0.137);
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 20px;
+            resize: vertical
+        }
+
+        input[type=submit] {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin: 10rem;
+            display: flex;
+            position: relative;
+            justify-content: center;
+            height: 33rem;
+            width: 28rem;
+            border: 1px solid var(--secondary-color-dark);
+            right: -23rem;
+        }
+
+        #fname {
+            margin-bottom: 20px;
+        }
+
+        #lname {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img class="logo" src="/img/logo.png" alt="">
+        <nav class="navbar">
+            <a href="/Resume/main.html">Tool</a>
+            <a href="/pricing page/pricing.html">Pricing</a>
+            <a href="/Accordation page/FAQs.html">FAQs</a>
+        </nav>
+        <div class="header-button">
+            <button id="LOGIN"><a href="/signup or login/login.html">Log in</a></button>
+            <button id="SIGNUP"><a href="/signup or login/signup.html">Sign Up</a></button>
+        </div>
+    </header>
+    <!-- contact us form -->
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2fbe8b1b-d1c3-4202-8b6b-f6cc9605b6f2">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Email</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer_container">
+            <div class="row">
+                <ul>
+
+                    <img src="/img/logo.png" alt="logo" style="height: 100px;
+                        width: 150px;">
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Resources</h6>
+                    <li>
+                        <a href="/Resume/main.html">Resume</a>
+                    </li>
+                    <li><a href="/Resume/main.html">CV</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Product</h6>
+                    <li>
+                        <a href="/pricing page/pricing.html">Price</a>
+                    </li>
+                    <li> <a href="/Reviews/reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <h6>Support</h6>
+                    <li><a href="/contactpage/contactus.html">Contact Us</a></li>
+                    <li>
+                        <a href="/privacy/privacy.html">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="last_para">
+            <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
